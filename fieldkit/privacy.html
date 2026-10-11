@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldKit Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .updated { color: #888; margin-top: 0; }
+</style>
+</head>
+<body>
+<h1>FieldKit Privacy Policy</h1>
+<p class="updated">Last updated October 11, 2026</p>
+
+<p>FieldKit is a tool for IT staff who manage devices with Microsoft Intune. Yeoman Labs does not collect, receive, store, or share any of your data. FieldKit has no servers of its own.</p>
+
+<h2>How FieldKit works</h2>
+<p>You sign in with your own work account from your organization's Microsoft tenant. FieldKit then talks directly from your phone to Microsoft (Microsoft Entra ID for sign-in, and Microsoft Graph for device, user, group, app and policy information). What you look up travels only between your phone and your organization's Microsoft tenant, under your organization's agreement with Microsoft. What you can see and do is limited by the permissions your organization grants FieldKit and by your own Intune and Entra roles.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li>Your tenant and app registration IDs and your FieldKit settings</li>
+  <li>Your last 20 lookups (serial numbers and device names)</li>
+  <li>Site walks you record: serial numbers and a snapshot of each device's details</li>
+  <li>CSV files you export, kept temporarily until you share them</li>
+</ul>
+<p>This data is protected with iOS data protection and is unreadable while your phone is locked. Your sign-in is kept by Microsoft's sign-in library in the iOS keychain.</p>
+
+<h2>What FieldKit never stores</h2>
+<ul>
+  <li>LAPS passwords and BitLocker recovery keys are fetched only when you ask, after Face ID or your passcode, and are never saved. Copies you place on the clipboard stay on this device and clear after 60 seconds.</li>
+  <li>The camera is used only to read barcodes. No images are saved or sent.</li>
+  <li>Face ID is handled by iOS. FieldKit never receives biometric data.</li>
+</ul>
+
+<h2>What FieldKit doesn't do</h2>
+<ul>
+  <li>No analytics, tracking, or advertising</li>
+  <li>No data sent to Yeoman Labs or any third party other than your organization's Microsoft tenant</li>
+  <li>Demo mode uses built-in sample data and makes no network requests</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>In FieldKit, Settings → Clear all local data removes site walks, recent lookups, exported files and settings. Signing out removes your sign-in. Deleting the app removes everything FieldKit stored.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="mailto:andrew@yeoman.engineer">andrew@yeoman.engineer</a></p>
+</body>
+</html>

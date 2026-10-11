@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FieldKit Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+  h1 { font-size: 28px; }
+  code { font-size: 15px; }
+</style>
+</head>
+<body>
+<h1>FieldKit Support</h1>
+<p>Questions or bugs? Email <a href="mailto:andrew@yeoman.engineer">andrew@yeoman.engineer</a>.</p>
+
+<h2>What you need</h2>
+<ul>
+  <li>A Microsoft Entra ID tenant with Microsoft Intune</li>
+  <li>An Entra admin to register FieldKit once (about 10 minutes). The setup screen in the app walks through it, and can send the steps to your admin.</li>
+  <li>Intune and Entra roles for each engineer that cover what they need to do</li>
+</ul>
+<p>Just looking? Tap <strong>Try with demo data</strong> on the setup screen to explore with sample devices. Nothing connects to Microsoft.</p>
+
+<h2>"Access denied"</h2>
+<p>The message names the permission or role that's missing. After an admin grants a permission to the app registration, open Settings → Permissions and tap <strong>Refresh sign-in</strong>. Your own roles still apply: for example, reading BitLocker keys needs an Entra role such as Cloud Device Administrator.</p>
+
+<h2>Scanning</h2>
+<p>Point the camera at the label. FieldKit highlights every barcode it sees; tap the serial number. Labels often carry several barcodes, so FieldKit never picks one for you. You can always type the serial instead.</p>
+
+<h2>Installing apps</h2>
+<p>Intune installs apps that are assigned as Required to a group the device or its user is in. FieldKit installs an app by adding the device or user to one of those groups, so the app needs a Required assignment to an assigned (not dynamic) group. One group per app, such as <code>APP-7-Zip-Install</code>, works best.</p>
+
+<p><a href="privacy.html">Privacy policy</a></p>
+</body>
+</html>
